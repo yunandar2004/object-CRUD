@@ -1,2 +1,2 @@
-java -jar studentScore.jar
-kotlinc studentScore.kt -include-runtime -d studentScore.jar
+java -jar fitnessMember.jar
+kotlinc fitnessMember.kt -include-runtime -d fitnessMember.jar
