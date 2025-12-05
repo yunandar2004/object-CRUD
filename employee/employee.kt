@@ -1,5 +1,5 @@
 data class Employee(
-    val id: Int,
+    val id: String,
     val name: String,
     var role:String,
     var baseSalary: Double,
@@ -8,7 +8,7 @@ data class Employee(
 
 fun main() {
 
-    val employeeMap = mutableMapOf<Int, Employee>()   
+    val employeeMap = mutableMapOf<String, Employee>()   
 
     var input: String
 
@@ -39,7 +39,7 @@ fun main() {
             // Add new employee
             "2" -> {
                 print("Enter employee ID: ")
-                val id = readLine()?.toIntOrNull()?: 0
+                val id = readLine()?.trim().orEmpty()
 
                 if (employeeMap.containsKey(id)) {
                     println("Employee with ID $id already exists.")
@@ -69,7 +69,7 @@ fun main() {
             // Update with ID
             "3" -> {
                 print("Enter employee ID to update: ")
-                val id = readLine()?.toIntOrNull() ?: 0
+                val id = readLine()?.trim().orEmpty()
 
                 val existingEmployee = employeeMap[id]
 
@@ -100,7 +100,7 @@ fun main() {
 
             "4" -> {
                 print("Enter employee ID to delete: ")
-                val id = readLine()?.toIntOrNull() ?: 0
+                val id = readLine()?.trim().orEmpty()
 
                 if (employeeMap.remove(id) != null) {
                     println("Employee deleted successfully.")
