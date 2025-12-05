@@ -1,0 +1,2 @@
+java -jar studentScore.jar
+kotlinc studentScore.kt -include-runtime -d studentScore.jar
