@@ -1,12 +1,12 @@
 open class FitnessMember(var name: String, val membershipId: String) {
     open fun membershipType(): String = "Basic"
-    open fun monthlyFee(): Double = 29.99
+    open fun monthlyFee(): Double = 49.99
     open fun perks(): List<String> = listOf()
 }
 
 class PremiumMembers(name: String, membershipId: String) : FitnessMember(name, membershipId) {
     override fun membershipType() = "Premium"
-    override fun monthlyFee() = 400.0
+    override fun monthlyFee() = 32.0
     override fun perks() = listOf("Gym Access", "Unlimited Group Classes", "Premium Permissions")
 }
 

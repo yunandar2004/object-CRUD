@@ -1,2 +1,2 @@
-java -jar employee.jar
-kotlinc employee.kt -include-runtime -d employee.jar
+java -jar fitnessMember.jar
+kotlinc fitnessMember.kt -include-runtime -d fitnessMember.jar
