@@ -1,2 +1,2 @@
-java -jar bankAccount.jar
-kotlinc bankAccount.kt -include-runtime -d bankAccount.jar
+java -jar employee.jar
+kotlinc employee.kt -include-runtime -d employee.jar
