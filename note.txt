@@ -1,2 +1,2 @@
-java -jar fitnessMember.jar
-kotlinc fitnessMember.kt -include-runtime -d fitnessMember.jar
+java -jar bankAccount1.jar
+kotlinc bankAccount1.kt -include-runtime -d bankAccount1.jar
